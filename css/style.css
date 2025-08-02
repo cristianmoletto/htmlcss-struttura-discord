@@ -3,19 +3,103 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-
 }
 
 /* COMMON */
 /* Utilities */
 .container {
-    display: flex; 
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+
+    /* Debug */
+    /* border: 1px solid black;
+    min-height: 40px; */
+
+}
+
+.px-10 {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+}
+
+.py-10 {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+}
+
+.py-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.px-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pyx-5{
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.dashed-border {
+    border: 1px dashed black;
 }
 
 /* Custom properties */
 :root {
     --space-md: 20px;
 	--space-sm: 10px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: lightblue;
+    margin: 1px solid black;
+    /* min-height: 80px; */
+}
+
+.navbox {
+    justify-content: space-between;
+    background-color: yellow;
+    align-items: center;
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.logo {
+    width: 25%;
+}
+
+.nav-links{
+    width: 50%;
+    list-style: none;
+    gap: 5px;
+    justify-content: center;
+}
+
+.login {
+    width: 25%;
+    justify-content: flex-end;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: darkblue;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-md)
+}
+
+.pink-block {
+    background-color: pink;
+    width: 60%;
+    margin: 0 auto;
+
+    /* Debug */
+    min-height: 300px;
 }
