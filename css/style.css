@@ -1,0 +1,21 @@
+/* RESET */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+/* COMMON */
+/* Utilities */
+.container {
+    display: flex; 
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Custom properties */
+:root {
+    --space-md: 20px;
+	--space-sm: 10px;
+}
